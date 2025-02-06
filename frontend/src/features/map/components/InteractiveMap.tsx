@@ -1,5 +1,5 @@
 import type { LatLngExpression, PathOptions } from "leaflet";
-import { MapContainer, Polygon, TileLayer, Tooltip } from "react-leaflet";
+import { MapContainer, Polygon, TileLayer } from "react-leaflet";
 
 export function InteractiveMap() {
 	const center: LatLngExpression = [51.505, -0.09];
@@ -30,7 +30,7 @@ export function InteractiveMap() {
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 			/>
 
-			<Polygon pathOptions={purpleOptions} positions={multiPolygon}/>
+			<Polygon pathOptions={purpleOptions} positions={multiPolygon} />
 		</MapContainer>
 	);
 }

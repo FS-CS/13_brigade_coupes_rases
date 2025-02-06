@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.z-max {
+	z-index: 9999;
+}

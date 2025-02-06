@@ -1,10 +1,10 @@
-import { createLazyFileRoute } from '@tanstack/react-router'
-import { InteractiveMap } from '../../features/map/components/InteractiveMap'
+import * as InteractiveMap from "@/features/map/components/InteractiveMap";
+import { createLazyFileRoute } from "@tanstack/react-router";
 
-export const Route = createLazyFileRoute('/map/')({
-  component: RouteComponent,
-})
+export const Route = createLazyFileRoute("/map/")({
+	component: RouteComponent,
+});
 
 function RouteComponent() {
-  return <InteractiveMap />
+	return <InteractiveMap.InteractiveMap />;
 }
