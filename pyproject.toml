@@ -13,6 +13,11 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
+gdal = "^3.9.3"
+jupyterlab = "^4.3.5"
+earthengine-api = "^1.5.4"
+ipyleaflet = "^0.19.2"
+geemap = "^0.35.2"
 
 [tool.poetry.group.backend.dependencies]
 python = "^3.11"
@@ -36,11 +41,16 @@ matplotlib = "^3.10.0"
 py7zr = "^0.22.0"
 rasterio = "^1.4.3"
 tqdm = "^4.67.1"
+jupyterlab = "^4.3.5"
+pyarrow = "^19.0.1"
 
 [tool.poetry.scripts]
 backend-start = "app.main:start_server"
 docker-start = "docker compose up -d --build"
 docker-stop = "docker compose down"
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
 
 [tool.ruff]
 # Same as Black.
